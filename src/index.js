@@ -3,16 +3,20 @@ import ReactDOM from 'react-dom';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import './index.scss';
 import App from './App';
+import AEscola from './pages/aEscola.js/AEscola';
+import Menu from '../src/components/menu/Menu';
+
 import * as serviceWorker from './serviceWorker';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 const routing = (
   <Router>
     <div>
-      <Route path="/" component={App} />
-      <Route path="/a-escola" component={App} />
-      <Route path="/para-quem" component={App} />
-      <Route path="/metodologia" component={App} />
+      <Menu />
+      <Route exact path="/" component={App} />
+      <Route exact path="/a-escola" component={AEscola} />
+      <Route exact path="/para-quem" component={App} />
+      <Route exact path="/metodologia" component={App} />
     </div>
   </Router>
 )

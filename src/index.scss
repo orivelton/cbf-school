@@ -6,9 +6,38 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-top: 50px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.navbar {
+  background: #F4CF49;
+}
+
+.img-logo {
+  position: absolute;
+  top: 0
+}
+
+.nav-link {
+  color: #007C47;
+}
+
+body .nav-link {
+  font-size: 20.83px;
+  margin-right: 20px;
+  &:hover {
+    color: #007C47;
+  }
+  img {
+    margin-right: 15px;
+  }
+}
+
+body .container {
+  max-width: 1270px;
 }
