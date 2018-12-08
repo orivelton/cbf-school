@@ -5,8 +5,6 @@ import MenuParaQuem from '../../assets/img/menu-para-quem.png';
 import MenuMetodologia from '../../assets/img/menu-metodologia.png';
 import MenuInscricoes from '../../assets/img/menu-inscricoes.png';
 import MenuContato from '../../assets/img/menu-contato.png';
-
-
 import { Link } from 'react-router-dom'
 
 class Menu extends Component {
