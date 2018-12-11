@@ -9,11 +9,11 @@ class AEscola extends Component {
   render() {
     return (
       <>
-        <img src={ ImgPage1 } alt="Págia a escola" className='w-100 d-none d-md-block' />
         <img src={ ImgPage } alt="Págia a escola" className='w-100 d-none d-md-block' />
+        <img src={ ImgPage1 } alt="Págia a escola" className='w-100 d-none d-md-block' />
 
-        <img src={ ImgPageMobile1 } alt="Págia a escola" className='w-100 d-block d-sm-none' />
         <img src={ ImgPageMobile } alt="Págia a escola" className='w-100 d-block d-sm-none' />
+        <img src={ ImgPageMobile1 } alt="Págia a escola" className='w-100 d-block d-sm-none' />
       </>
     );
   }
