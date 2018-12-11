@@ -44,7 +44,11 @@ body .container {
 // Medium devices (tablets, 768px and up)
 @media (max-width: 768px) {
   .img-logo {
-    width: 86px;
+    width: 135px;
+  }
+
+  .navbar-collapse {
+    margin-top: 50px;
   }
 }
 

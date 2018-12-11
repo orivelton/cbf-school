@@ -9,11 +9,17 @@ import { Link } from 'react-router-dom'
 
 class Menu extends Component {
   render() {
+    function toogleMenu() {
+      const clickMenu = document.querySelector('.navbar-toggler[aria-expanded="true"]');
+      if(clickMenu) {
+        clickMenu.click();
+      }
+    }
     return (
       <div>
-        <nav class="navbar navbar-expand-lg fixed-top">
-          <div class="container">
-            <Link to="/">
+        <nav className="navbar navbar-expand-lg fixed-top">
+          <div className="container">
+            <Link to="/home">
               <img src={logo} alt={'Logo cbf-school'} className="img-logo" />
             </Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,31 +28,31 @@ class Menu extends Component {
 
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarsExample07">
               <ul className="navbar-nav ml-auto">
-                <li className="nav-item">
+                <li className="nav-item" onClick={toogleMenu}>
                   <Link to="/a-escola" className="nav-link" title="Menu A escola">
                     <img src={MenuEscola} alt="Menu A escola" />
                     a escola
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" onClick={toogleMenu}>
                   <Link to="/para-quem" className="nav-link" title="Menu para quem">
                     <img src={MenuParaQuem} alt="Menu para quem" />
                     para quem
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" onClick={toogleMenu}>
                   <Link to="/metodologia" className="nav-link" title="Menu metodologia">
                     <img src={MenuMetodologia} alt="Menu metodologia" />                    
                     metodologia
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" onClick={toogleMenu}>
                   <Link to="#" className="nav-link" title="Menu inscriçoes">
                     <img src={MenuInscricoes} alt="Menu inscriçoes" />
                     inscriçoes
                   </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" onClick={toogleMenu}>
                   <a href={'mailto:contato@cbf.com'} className="nav-link" title="Menu Contato">
                     <img src={MenuContato} alt="Menu Contato" />
                     contato@cbf.com

@@ -1,5 +1,6 @@
 {
   "name": "cbf-school",
+  "homepage":"http://cbf-school.com/home/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

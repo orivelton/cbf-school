@@ -16,7 +16,7 @@ const routing = (
   <Router>
     <div>
       <Menu />
-      <Route exact path="/" component={ App } />
+      <Route exact path="/home" component={ App } />
       <Route exact path="/a-escola" component={ AEscola } />
       <Route exact path="/para-quem" component={ ParaQuem } />
       <Route exact path="/metodologia" component={ Metodologia } />
