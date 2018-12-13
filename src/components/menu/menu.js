@@ -29,33 +29,15 @@ class Menu extends Component {
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarsExample07">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item" onClick={toogleMenu}>
-                  <Link to="/a-escola" className="nav-link" title="Menu A escola">
-                    <img src={MenuEscola} alt="Menu A escola" />
-                    a escola
-                  </Link>
-                </li>
-                <li className="nav-item" onClick={toogleMenu}>
-                  <Link to="/para-quem" className="nav-link" title="Menu para quem">
-                    <img src={MenuParaQuem} alt="Menu para quem" />
-                    para quem
-                  </Link>
-                </li>
-                <li className="nav-item" onClick={toogleMenu}>
-                  <Link to="/metodologia" className="nav-link" title="Menu metodologia">
-                    <img src={MenuMetodologia} alt="Menu metodologia" />                    
-                    metodologia
-                  </Link>
-                </li>
-                <li className="nav-item" onClick={toogleMenu}>
                   <Link to="#" className="nav-link" title="Menu inscriçoes">
                     <img src={MenuInscricoes} alt="Menu inscriçoes" />
                     inscriçoes
                   </Link>
                 </li>
                 <li className="nav-item" onClick={toogleMenu}>
-                  <a href={'mailto:contato@cbf.com'} className="nav-link" title="Menu Contato">
+                  <a href={'mailto:contato@cbf-school.com'} className="nav-link" title="Menu Contato">
                     <img src={MenuContato} alt="Menu Contato" />
-                    contato@cbf.com
+                    contato@cbf-school.com
                   </a>
                 </li>
               </ul>
