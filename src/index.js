@@ -3,9 +3,6 @@ import ReactDOM from 'react-dom';
 import { Route, BrowserRouter as Router } from 'react-router-dom'
 import './index.scss';
 import App from './App';
-import AEscola from './pages/aEscola.js/AEscola';
-import ParaQuem from './pages/paraQuem/ParaQuem';
-import Metodologia from './pages/metodologia/Metodologia';
 
 import Menu from '../src/components/menu/Menu';
 
@@ -17,9 +14,6 @@ const routing = (
     <div>
       <Menu />
       <Route exact path="/home" component={ App } />
-      <Route exact path="/a-escola" component={ AEscola } />
-      <Route exact path="/para-quem" component={ ParaQuem } />
-      <Route exact path="/metodologia" component={ Metodologia } />
     </div>
   </Router>
 )

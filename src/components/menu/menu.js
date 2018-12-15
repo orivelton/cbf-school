@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import logo from '../../assets/img/logo.png';
-import MenuEscola from '../../assets/img/menu-a-escola.png';
-import MenuParaQuem from '../../assets/img/menu-para-quem.png';
-import MenuMetodologia from '../../assets/img/menu-metodologia.png';
 import MenuInscricoes from '../../assets/img/menu-inscricoes.png';
 import MenuContato from '../../assets/img/menu-contato.png';
 import { Link } from 'react-router-dom'
@@ -29,10 +26,10 @@ class Menu extends Component {
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarsExample07">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item" onClick={toogleMenu}>
-                  <Link to="#" className="nav-link" title="Menu inscriçoes">
-                    <img src={MenuInscricoes} alt="Menu inscriçoes" />
-                    inscriçoes
-                  </Link>
+                  <a href="https://www.isoccer.com.br/cbfschool/alunos/" className="nav-link" title="Menu inscriçoes">
+                    <img src={MenuInscricoes} alt="Menu inscrições" />
+                    inscrições
+                  </a>
                 </li>
                 <li className="nav-item" onClick={toogleMenu}>
                   <a href={'mailto:contato@cbf-school.com'} className="nav-link" title="Menu Contato">
